@@ -115,7 +115,20 @@ REVERTIR UN COMMIT
 	CAMBIAR EL Contenido Del ARCHIVO DEL COMMIT
 		head apunta al ultimo commit
 		^Como estaba antes del ultimo commit
+
 		soft menos destructivo, no va borrar ni modificar nada
-	
+		lo va a rebertir a un determinado punto en nuestra historia
+
+		hard destruye los cambios posteriores al punto que elijas
+		
+		mixed no borra los archivos que no estan en los commit, los quita del staged pero contienen las modificaciones
+
 		git reset --soft HEAD^
 
+	    si quieres volver a como estaba
+
+	    git reflog
+			 te saca listado de como estaba antes de borrar nada
+
+			 y despues vuelves con
+			 git reset --hard 1ce2665
