@@ -99,3 +99,16 @@ git diff
 git diff --staged
 
 	lo mismo pero de los que estan en el escenario
+
+
+REVERTIR UN COMMIT	
+
+	CAMBIA EL MENSAJE
+		git commit --amend -m "Actualizar texto del commit"
+	
+	CAMBIAR EL Contenido Del ARCHIVO DEL COMMIT
+		head apunta al ultimo commit
+		^Como estaba antes del ultimo commit
+
+
+		git reset --soft HEAD^
