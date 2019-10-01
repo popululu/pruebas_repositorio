@@ -30,6 +30,11 @@ descargar de https://git-scm.com/
  git status
  	 en que estado se entuentran nuestros archivos
 
+ git status -s
+ 	mas corto
+ git status -s -b
+ 	para ver la rama en la que estamos trabajando
+
 git add .
  	 agregar todos los archivos para que git este pendiente de los cambios
  	 los manda al escenario, ahi esta lista para tomar fotografias
@@ -46,6 +51,14 @@ git add css/
 git add -A
 	agrega todos los archivos que fueron modificados
 
+git add
+		"*.txt" agrega todos los txt de todo el proyecto
+		*.txt agrega  todos los txt del directorio actual
+		--all agrega todos los archivos modificados
+		<lista de archivos >
+		pdfs/*.pdf
+		pdfs/ todos los archivos dentro de esta carpeta
+
 git reset *.xml
 	excluir del escenario un archivo este seria los archivos ocn extension .xml
 
@@ -58,3 +71,6 @@ git checkout -- .
 
 git log
 	para ver los commit que hay creados
+git log --oneline
+	ver en una linea
+git log --oneline --decorate --all --graph
