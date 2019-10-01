@@ -32,6 +32,7 @@ descargar de https://git-scm.com/
 
  git status -s
  	mas corto
+
  git status -s -b
  	para ver la rama en la que estamos trabajando
 
@@ -62,6 +63,12 @@ git add
 git reset *.xml
 	excluir del escenario un archivo este seria los archivos ocn extension .xml
 
+git reset HEAD nombrearchivo.txt	
+	lo saca del escenario
+
+git checkout --nombrearchivo.txt
+	lo deja como estaba antes de modificarlo
+
 git commit -m "Primer commit"
 	 toma una fotografia de como se encuentra el proyecto en este momento
 
@@ -74,3 +81,21 @@ git log
 git log --oneline
 	ver en una linea
 git log --oneline --decorate --all --graph
+
+	alias
+		para no tener que escribir tanto
+
+		git config --global alias.lg "log --oneline --decorate --all --graph"
+
+		cuando escribas ahora git lg ejecuta todo los que pusiste entre comillas
+
+	ver todos los alias que tengas
+		git config --global -e	
+		para salir :q
+
+git diff
+	Nos dice los cambios que hubo en los archivos, ente el ultimo commit y la actualidad		
+
+git diff --staged
+
+	lo mismo pero de los que estan en el escenario
