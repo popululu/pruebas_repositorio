@@ -72,6 +72,12 @@ git checkout --nombrearchivo.txt
 git commit -m "Primer commit"
 	 toma una fotografia de como se encuentra el proyecto en este momento
 
+git commit
+	te abre un archivo para que escribas el mensaje en varias lineas
+
+	tocar escape y luego
+	:WQ grabar y salir
+
 git checkout -- .
 	vuelve al ultimo commit aunque hayas borrado todo
 	si has borrado la carpeta js o otra tambien la recupera
@@ -109,7 +115,7 @@ REVERTIR UN COMMIT
 	CAMBIAR EL Contenido Del ARCHIVO DEL COMMIT
 		head apunta al ultimo commit
 		^Como estaba antes del ultimo commit
-
-
+		soft menos destructivo, no va borrar ni modificar nada
+	
 		git reset --soft HEAD^
 
