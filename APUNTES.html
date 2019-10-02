@@ -130,5 +130,69 @@ REVERTIR UN COMMIT
 	    git reflog
 			 te saca listado de como estaba antes de borrar nada
 
-			 y despues vuelves con
+			 y despues vuelves con al punto inicial donde estaba
 			 git reset --hard 1ce2665
+
+	CAMBIAR NOMBRE ELIMINAR DESDE GIT
+		git mv destruir.txt salvar.txt cambia nombre
+		git rm salvar.tx
+		git status
+		git add -u actualiza todo
+
+	IGNORAR ARCHIVOS
+		crear un archivo que se llame
+		.gitignore		
+			escribir dentro
+			data.log y ese archivo lo excluiria
+			escluir un directorio
+			node_modules/
+		el .gitignore le agregas commit
+
+	RAMAS
+		crear una nueva rama
+		git branch rama-villanos
+
+		listado de ramas
+		git branch
+
+		cambiar de rama
+		git checkout rama-villanos
+
+		incluir rama en la master
+		1.	git checkout master /*te mueves a la rama master*/		
+		2.	unir ambas ramas
+			git merge rama-villanos
+
+		Borrar rama
+			git branch -d rama-villanos
+
+		--------AUTOMATICO
+		git checkout -b rama-villano la crea y te mueves a ella
+		git merge rama-villanos
+
+		--------CONFLICTOS
+
+		Abres el archivo y quitas lo que no vale, y dejas la ultima actualizacion del contenido
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
