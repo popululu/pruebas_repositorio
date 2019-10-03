@@ -169,6 +169,22 @@ REVERTIR UN COMMIT
 		--------AUTOMATICO
 		git checkout -b rama-villano la crea y te mueves a ella
 		git merge rama-villanos
+		
+	MERGE - UNIONES
+			1.Fast-Forward git detecta que no hay ningun cambio en la rama principal
+			  pueden ser integrados de forma transparente
+			  los commits formaran parte de la rama principal como si nunca nos hubieramos separado
+			  Se puede desactivar si no lo quieres
+
+			2.Merge -Uniones automaticas
+			  git detecta en la	rama principal hubo algun cambio, que la otra rama desconoce
+			  detecta que nose modificaron lineas iguales, no hay conflictos
+			  git las une de forma automatica
+
+			3.Manual
+			  los cambios de una rama afectan a la otra
+			  va dar error conflicto no se puede
+			  lo tienes que resolver de forma manual creando un MERGE COMMIT
 
 		--------CONFLICTOS
 
